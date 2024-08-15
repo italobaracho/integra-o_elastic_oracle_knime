@@ -25,3 +25,12 @@ O objetivo final desse pipeline no pode ser a transformação e a sincronizaçã
 - **SQL Server**: Banco de dados relacional usado para armazenar dados estruturados.
 - **KNIME**: Plataforma de análise de dados utilizada para processar, transformar e modelar os dados.
 - **Elasticsearch**: Motor de busca e análise utilizado para indexar e realizar buscas nos dados processados.
+
+
+
+## Pré-requisitos
+
+- Docker instalado ([instruções de instalação](https://docs.docker.com/get-docker/))
+- SQL Server instalado e configurado ([instruções de instalação](https://docs.microsoft.com/pt-br/sql/database-engine/install-windows/install-sql-server?view=sql-server-ver15))
+- KNIME instalado ([download](https://www.knime.com/downloads))
+- Elasticsearch instalado ([instruções de instalação](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html))
