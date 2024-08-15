@@ -79,7 +79,7 @@ docker-compose up -d
 
 
 - Microsoft SQL Server Connector:
-
+- 
 Função: Estabelece uma conexão com o SQL Server.
 Instruções: Configure as credenciais e parâmetros de conexão (endereço do servidor, nome do banco de dados, usuário e senha).
 
@@ -108,22 +108,52 @@ Instruções: Defina a condição (ex.: manter apenas registros onde a data é m
 Função: Envia um e-mail com os dados ou informações desejadas.
 Instruções: Configure o servidor de e-mail, remetente, destinatário(s), assunto e corpo do e-mail. Anexe os dados ou inclua-os no corpo do e-mail, conforme necessário.
 
-String Manipulation:
+- String Manipulation:
 
 Função: Modifica strings (textos) dentro das colunas.
 Instruções: Defina as regras de manipulação, como substituir, concatenar ou alterar o formato dos textos.
-Column Filter (segunda instância):
 
-Função: Novamente filtra as colunas do dataset.
-Instruções: Selecione as colunas finais que serão usadas na próxima etapa.
-Sorter:
+- Sorter:
 
 Função: Ordena os dados com base em uma ou mais colunas.
 Instruções: Escolha as colunas e a ordem (crescente ou decrescente) para a ordenação.
-POST Request:
+
+- POST Request:
 
 Função: Envia uma requisição POST para uma API com os dados processados.
 Instruções: Configure a URL da API, os cabeçalhos e o corpo da requisição (normalmente em JSON).
+
+- Table Creator:
+
+Função: Cria uma tabela manualmente para utilizar como input em um node subsequente.
+Instruções: Insira os valores iniciais ou parâmetros que serão utilizados na consulta GET ao Elasticsearch.
+
+- GET Request:
+
+Função: Realiza uma requisição GET para a API do Elasticsearch.
+Instruções: Configure a URL do Elasticsearch, os parâmetros da requisição, e os cabeçalhos necessários.
+
+- JSON Path:
+
+Função: Extrai dados específicos de uma estrutura JSON retornada pela requisição GET.
+Instruções: Defina os caminhos JSON para extrair os valores desejados.
+
+- Ungroup:
+
+Função: Desagrupa coleções de dados aninhados em colunas JSON.
+Instruções: Selecione a coluna JSON que contém os dados aninhados e desagrupe-os.
+
+- Rule Engine:
+
+Função: Aplica regras condicionais nos dados para criar novas colunas ou categorizar os dados.
+Instruções: Defina regras lógicas, como "Se VendasID do SQL Server existir no Elasticsearch, então marque como 'Presente'".
+
+- Line Plot:
+
+Função: Visualiza os dados em um gráfico de linhas.
+Instruções: Escolha as colunas que serão utilizadas como eixos X e Y para o gráfico. Configure as propriedades visuais do gráfico conforme necessário.
+
+
 ### Executando o KNIME
 
 - Abra o KNIME.
