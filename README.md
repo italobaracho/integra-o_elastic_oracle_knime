@@ -45,5 +45,22 @@ git clone https://github.com/italobaracho/integracao_server_knime_elastic.git
 cd integracao_server_knime_elastic
 
 
+## Instrução de uso
 
+version: '3'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "YourStrong@Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
 
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.10
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+      - "9300:9300"
