@@ -1,5 +1,8 @@
 ## Integração e Sincronização de Dados Entre SQL Server e Elasticsearch Usando KNIME
 
+<p align=center>
+  <img src="https://github.com/italobaracho/integracao_server_knime_elastic/blob/main/imgs/estrutura%20completa.png" width="80%">
+</p>
 
 ### Índice
 
