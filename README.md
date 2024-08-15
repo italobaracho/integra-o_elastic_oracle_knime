@@ -40,7 +40,7 @@ O objetivo final desse pipeline no pode ser a transformação e a sincronizaçã
 
 ### 1. Clone o repositório
 
-```bash
+````
 git clone https://github.com/italobaracho/integracao_server_knime_elastic.git
 cd integracao_server_knime_elastic
 
@@ -67,16 +67,63 @@ services:
 
 
 docker-compose up -d
-
+````
 
 
 
 ### 7. **Instruções de Uso**
 - Passos para rodar e utilizar o projeto.
 
-```markdown
+
 ## Instruções de Uso
 
+
+- Microsoft SQL Server Connector:
+
+Função: Estabelece uma conexão com o SQL Server.
+Instruções: Configure as credenciais e parâmetros de conexão (endereço do servidor, nome do banco de dados, usuário e senha).
+
+- DB Query Reader:
+
+Função: Executa uma query SQL na base conectada.
+Instruções: Escreva a query SQL desejada para extrair os dados necessários do banco de dados.
+
+- Column Filter:
+
+Função: Filtra as colunas do dataset para manter apenas aquelas que são relevantes.
+Instruções: Selecione as colunas que você deseja manter no dataset.
+
+- Row Filter:
+
+Função: Filtra as linhas do dataset com base em uma condição específica.
+Instruções: Defina a condição (ex.: manter apenas registros onde a data é maior que uma certa data).
+ 
+- Joiner:
+
+ Função: Faz uma junção entre dois datasets.
+ Instruções: Configure as colunas para a junção (escolha a chave primária ou de ligação entre as tabelas/datasets).
+
+- Send Email:
+
+Função: Envia um e-mail com os dados ou informações desejadas.
+Instruções: Configure o servidor de e-mail, remetente, destinatário(s), assunto e corpo do e-mail. Anexe os dados ou inclua-os no corpo do e-mail, conforme necessário.
+
+String Manipulation:
+
+Função: Modifica strings (textos) dentro das colunas.
+Instruções: Defina as regras de manipulação, como substituir, concatenar ou alterar o formato dos textos.
+Column Filter (segunda instância):
+
+Função: Novamente filtra as colunas do dataset.
+Instruções: Selecione as colunas finais que serão usadas na próxima etapa.
+Sorter:
+
+Função: Ordena os dados com base em uma ou mais colunas.
+Instruções: Escolha as colunas e a ordem (crescente ou decrescente) para a ordenação.
+POST Request:
+
+Função: Envia uma requisição POST para uma API com os dados processados.
+Instruções: Configure a URL da API, os cabeçalhos e o corpo da requisição (normalmente em JSON).
 ### Executando o KNIME
 
 - Abra o KNIME.
@@ -85,9 +132,9 @@ docker-compose up -d
 
 ### Inserção e Busca de Dados no Elasticsearch
 
-- Use o node `ElasticSearch Bulk Load` para carregar os dados no Elasticsearch.
+- Use o node `POST Request` para carregar os dados no Elasticsearch.
 - Use a interface do Elasticsearch ou o comando curl para realizar buscas nos dados:
 
 ```bash
-curl -X GET "localhost:9200/seu_indice/_search?pretty"
+https://localhost:9200/seu_indice/_doc
 
