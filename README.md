@@ -67,3 +67,27 @@ services:
 
 
 docker-compose up -d
+
+
+
+
+### 7. **Instruções de Uso**
+- Passos para rodar e utilizar o projeto.
+
+```markdown
+## Instruções de Uso
+
+### Executando o KNIME
+
+- Abra o KNIME.
+- Importe o workflow [instruções para importar workflows].
+- Execute o workflow para processar os dados.
+
+### Inserção e Busca de Dados no Elasticsearch
+
+- Use o node `ElasticSearch Bulk Load` para carregar os dados no Elasticsearch.
+- Use a interface do Elasticsearch ou o comando curl para realizar buscas nos dados:
+
+```bash
+curl -X GET "localhost:9200/seu_indice/_search?pretty"
+
