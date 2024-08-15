@@ -43,3 +43,7 @@ O objetivo final desse pipeline no pode ser a transformação e a sincronizaçã
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
+
+
+
+
