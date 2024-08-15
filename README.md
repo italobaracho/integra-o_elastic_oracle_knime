@@ -34,3 +34,12 @@ O objetivo final desse pipeline no pode ser a transformação e a sincronizaçã
 - SQL Server instalado e configurado ([instruções de instalação](https://docs.microsoft.com/pt-br/sql/database-engine/install-windows/install-sql-server?view=sql-server-ver15))
 - KNIME instalado ([download](https://www.knime.com/downloads))
 - Elasticsearch instalado ([instruções de instalação](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html))
+
+
+## Configuração do Ambiente
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
