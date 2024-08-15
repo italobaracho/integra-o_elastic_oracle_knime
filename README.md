@@ -55,8 +55,11 @@ docker-compose up -d
 ## Instruções de Uso
 
 - Imagem dos Workflow no Knime
-  
-https://github.com/italobaracho/integracao_server_knime_elastic/blob/main/imgs/Knime%20estrutura.png
+
+<p align=center>
+  <img src="https://github.com/italobaracho/integracao_server_knime_elastic/blob/main/imgs/Knime%20estrutura.png" width="80%">
+</p>
+
 
 ### Passos para rodar e utilizar o projeto.
 
