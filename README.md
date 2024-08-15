@@ -64,3 +64,6 @@ services:
     ports:
       - "9200:9200"
       - "9300:9300"
+
+
+docker-compose up -d
