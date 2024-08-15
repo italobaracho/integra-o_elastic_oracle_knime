@@ -41,8 +41,8 @@ O objetivo final desse pipeline no pode ser a transformação e a sincronizaçã
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/italobaracho/integracao_server_knime_elastic.git
+cd integracao_server_knime_elastic
 
 
 
