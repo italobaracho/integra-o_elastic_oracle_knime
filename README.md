@@ -38,48 +38,31 @@ O objetivo final desse pipeline no pode ser a transformação e a sincronizaçã
 
 ## Configuração do Ambiente
 
-### 1. Clone o repositório
+### Clone o repositório
 
 ````
 git clone https://github.com/italobaracho/integracao_server_knime_elastic.git
 cd integracao_server_knime_elastic
+````
 
-
-## Instrução de uso
-
-version: '3'
-services:
-  sqlserver:
-    image: mcr.microsoft.com/mssql/server:2019-latest
-    environment:
-      SA_PASSWORD: "YourStrong@Passw0rd"
-      ACCEPT_EULA: "Y"
-    ports:
-      - "1433:1433"
-
-  elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.10
-    environment:
-      - discovery.type=single-node
-    ports:
-      - "9200:9200"
-      - "9300:9300"
-
-
+Execute o Docker Compose para subir os contêineres:
+````
 docker-compose up -d
 ````
 
 
 
-### 7. **Instruções de Uso**
-- Passos para rodar e utilizar o projeto.
-
-
 ## Instruções de Uso
+
+- Imagem dos Workflow no Knime
+  
+
+
+### Passos para rodar e utilizar o projeto.
 
 
 - Microsoft SQL Server Connector:
-- 
+  
 Função: Estabelece uma conexão com o SQL Server.
 Instruções: Configure as credenciais e parâmetros de conexão (endereço do servidor, nome do banco de dados, usuário e senha).
 
