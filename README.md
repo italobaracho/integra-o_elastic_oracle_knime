@@ -17,7 +17,7 @@
 
 ## Introdução
 
-O objetivo final desse pipeline no pode ser a transformação e a sincronização de dados entre um banco de dados SQL Server e o Elasticsearch. Especificamente, você está processando dados no SQL Server com etapas de filtragem, ordenação, e manipulação, e, em seguida, realizando consultas e operações no Elasticsearch, para indexação dos dados 
+O objetivo deste pipeline no KNIME é transformar e sincronizar dados entre um banco de dados SQL Server e o Elasticsearch. Basicamente, os dados são processados no SQL Server, passando por etapas de filtragem, ordenação e manipulação. Depois, o KNIME cuida das consultas e operações no Elasticsearch para indexar os dados.
 
 
 
